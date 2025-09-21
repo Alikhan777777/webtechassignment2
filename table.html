@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Grading System</title>
+    <link rel="stylesheet" href="styles/table.css">
+</head>
+<body>
+    <h1 id="heading">Student Grading System</h1>
+    <nav>
+        <ul>
+            <li><a href="simple-layout.html">nav1</a></li>
+            <li><a href="tribute.html">nav2</a></li>
+            <li><a href="table.html">nav3</a></li>
+            <li><a href="form.html">nav4</a></li>
+        </ul>
+    </nav>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="3" style="width: 200px;">Subject</th>
+            </tr>
+            <tr>
+                <th>Math</th>
+                <th>Science</th>
+                <th>PE</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>Alikhan</td>
+                <td>3.0</td>
+                <td>3.33</td>
+                <td>3.33</td>
+            </tr>
+            <tr>
+                <td>Zeyin</td>
+                <td>3.33</td>
+                <td>2.67</td>
+                <td>3.33</td>
+            </tr>
+            <tr class="highlight">
+                <td>Nurbak</td>
+                <td>4.0</td>
+                <td>3.33</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>Ramazan</td>
+                <td>2.33</td>
+                <td>3.33</td>
+                <td>3.33</td>
+            </tr>
+            <tr>
+                <td>Daniyal</td>
+                <td>4.0</td>
+                <td>3.33</td>
+                <td>3.33</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <h2 id="heading2">Form Submission</h2>
+
+        <div class="input-box">
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="" required>
+        </div>
+        <div class="input-box">
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" placeholder="" required>
+        </div>
+
+        <label for="role">Choose your role:</label>
+        <select id="role" name="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>
+            <input class="radio" type="radio" name="updates" value="yes">
+            Yes
+        </label>
+        <label>
+            <input class="radio" type="radio" name="updates" value="no">
+            No
+        </label>
+
+        <div class="comments">
+            <label for="comments">Your comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        </div>
+
+        <button>Submit</button>
+    </form>
+
+    <footer>&copy; 2024. All rights reserved.</footer>
+</body>
+</html>
